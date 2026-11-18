@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawShop — магазин товарів для тварин</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <a href="#" class="logo">🐾 PawShop</a>
+
+        <nav class="nav" id="nav">
+            <a href="#home">Головна</a>
+            <a href="#categories">Категорії</a>
+            <a href="#products">Товари</a>
+            <a href="#about">Про нас</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+
+        <div class="header-right">
+            <a href="#products" class="cart">🛒 <span id="cart-count">0</span></a>
+            <button class="menu-button" id="menu-button">☰</button>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <span class="small-title">ЛАСКАВО ПРОСИМО ДО PAWSHOP</span>
+            <h1>Усе найкраще для ваших <span>улюбленців!</span></h1>
+            <p>Турбота про домашніх тварин починається з маленьких речей. Обирайте якісні товари для своїх пухнастих друзів.</p>
+            <a href="#products" class="main-button">Переглянути товари →</a>
+        </div>
+
+        <div class="about-image">
+    <img src="tvarunug.jpg" alt="Моя собака">
+</div>
+    </div>
+</section>
+
+<section class="categories section" id="categories">
+    <div class="container">
+        <div class="section-heading">
+            <span>НАШ АСОРТИМЕНТ</span>
+            <h2>Обирайте для своїх улюбленців</h2>
+            <p>Усе найкраще для маленьких членів вашої родини.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=700" alt="Собака">
+                <div>
+                    <h3>Для собак 🐶</h3>
+                    <p>Корм, іграшки та аксесуари</p>
+                    <span>Переглянути →</span>
+                </div>
+            </a>
+
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=700" alt="Кіт">
+                <div>
+                    <h3>Для котів 🐱</h3>
+                    <p>Усе для пухнастих друзів</p>
+                    <span>Переглянути →</span>
+                </div>
+            </a>
+
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=700" alt="Кролик">
+                <div>
+                    <h3>Для кроликів 🐰</h3>
+                    <p>Корм, сіно та будиночки</p>
+                    <span>Переглянути →</span>
+                </div>
+            </a>
+
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=700" alt="Папуга">
+                <div>
+                    <h3>Для папуг 🦜</h3>
+                    <p>Клітки, корм та іграшки</p>
+                    <span>Переглянути →</span>
+                </div>
+            </a>
+
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=700" alt="Хом'як">
+                <div>
+                    <h3>Для хом'яків 🐹</h3>
+                    <p>Будиночки, корм та аксесуари</p>
+                    <span>Переглянути →</span>
+                </div>
+            </a>
+
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=700" alt="Черепаха">
+                <div>
+                    <h3>Для черепах 🐢</h3>
+                    <p>Акваріуми та спеціальний корм</p>
+                    <span>Переглянути →</span>
+                </div>
+            </a>
+
+            <a href="#products" class="category-card">
+                <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?w=700" alt="Рибки">
+                <div>
+                    <h3>Для рибок 🐠</h3>
+                    <p>Акваріуми, корм та декор</p>
+                    <span>Переглянути →</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="products section" id="products">
+    <div class="container">
+        <div class="section-heading">
+            <span>ПОПУЛЯРНІ ТОВАРИ</span>
+            <h2>Наші товари</h2>
+            <p>Корисні та цікаві речі для ваших домашніх улюбленців.</p>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=600" alt="Корм для собак">
+                <div class="product-info">
+                    <span class="product-type">Для собак</span>
+                    <h3>Сухий корм для собак</h3>
+                    <div class="product-bottom">
+                        <strong>450 грн</strong>
+                        <button onclick="addToCart()">Додати 🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?w=600" alt="Іграшка для собак">
+                <div class="product-info">
+                    <span class="product-type">Для собак</span>
+                    <h3>Іграшка для улюбленця</h3>
+                    <div class="product-bottom">
+                        <strong>180 грн</strong>
+                        <button onclick="addToCart()">Додати 🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600" alt="Товари для котів">
+                <div class="product-info">
+                    <span class="product-type">Для котів</span>
+                    <h3>Набір для котика</h3>
+                    <div class="product-bottom">
+                        <strong>320 грн</strong>
+                        <button onclick="addToCart()">Додати 🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600" alt="Іграшка для котів">
+                <div class="product-info">
+                    <span class="product-type">Для котів</span>
+                    <h3>Іграшка для котів</h3>
+                    <div class="product-bottom">
+                        <strong>150 грн</strong>
+                        <button onclick="addToCart()">Додати 🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=600" alt="Кролик">
+                <div class="product-info">
+                    <span class="product-type">Для кроликів</span>
+                    <h3>Будиночок для кролика</h3>
+                    <div class="product-bottom">
+                        <strong>390 грн</strong>
+                        <button onclick="addToCart()">Додати 🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=600" alt="Папуга">
+                <div class="product-info">
+                    <span class="product-type">Для папуг</span>
+                    <h3>Іграшка для папуги</h3>
+                    <div class="product-bottom">
+                        <strong>210 грн</strong>
+                        <button onclick="addToCart()">Додати 🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=600" alt="Хом'як">
+                <div class="product-info">
+                    <span class="product-type">Для хом'яків</span>
+                    <h3>Аксесуари для хом'яка</h3>
+                    <div class="product-bottom">
+                        <strong>170 грн</strong>
+                        <button onclick="addToCart()">Додати 🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?w=600" alt="Акваріумні рибки">
+                <div class="product-info">
+                    <span class="product-type">Для рибок</span>
+                    <h3>Декор для акваріума</h3>
+                    <div class="product-bottom">
+                        <strong>250 грн</strong>
+                        <button onclick="addToCart()">Додати 🛒</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="benefits section">
+    <div class="container">
+        <div class="section-heading">
+            <span>НАШІ ПЕРЕВАГИ</span>
+            <h2>Чому обирають PawShop?</h2>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">💙</div>
+                <h3>Турбота про тварин</h3>
+                <p>Ми обираємо товари з любов'ю до кожного улюбленця.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🚚</div>
+                <h3>Швидка доставка</h3>
+                <p>Ваші замовлення швидко потраплять до вас.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">⭐</div>
+                <h3>Якісні товари</h3>
+                <p>Великий вибір товарів для різних домашніх тварин.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about section" id="about">
+    <div class="container about-content">
+        <div class="about-image">
+    <img src="tvarunug.jpg" alt="Собака">
+</div>
+        <div class="about-text">
+            <span class="small-title">ТРОХИ ПРО НАС</span>
+            <h2>Ми любимо тварин так само, як і ви!</h2>
+            <p>PawShop — це магазин, створений для тих, хто хоче дарувати своїм домашнім улюбленцям найкраще.</p>
+            <p>У нас ви знайдете корм, іграшки, аксесуари та багато інших корисних товарів для різних видів тварин.</p>
+            <a href="#contact" class="main-button">Зв'язатися з нами →</a>
+        </div>
+    </div>
+</section>
+
+<section class="contact section" id="contact">
+    <div class="container">
+        <div class="section-heading">
+            <span>МИ НА ЗВ'ЯЗКУ</span>
+            <h2>Контакти</h2>
+            <p>Маєте запитання? Ми будемо раді допомогти!</p>
+        </div>
+
+        <div class="contact-box">
+            <div class="contact-item">
+                <span>📍</span>
+                <div>
+                    <h3>Адреса</h3>
+                    <p>м. Вінниця, Україна</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>📞</span>
+                <div>
+                    <h3>Телефон</h3>
+                    <p>+380 00 000 00 00</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>✉️</span>
+                <div>
+                    <h3>Електронна пошта</h3>
+                    <p>pawshop@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <a href="#" class="logo">🐾 PawShop</a>
+        <p>Турбота, любов і найкраще для ваших улюбленців.</p>
+        <span>© 2026 PawShop. Усі права захищені.</span>
+    </div>
+</footer>
+
+<script>
+    let cartCount = 0;
+
+    function addToCart() {
+        cartCount++;
+        document.getElementById("cart-count").textContent = cartCount;
+    }
+
+    const menuButton = document.getElementById("menu-button");
+    const nav = document.getElementById("nav");
+
+    menuButton.addEventListener("click", function() {
+        nav.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav a").forEach(function(link) {
+        link.addEventListener("click", function() {
+            nav.classList.remove("active");
+        });
+    });
+</script>
+
+</body>
+</html>
